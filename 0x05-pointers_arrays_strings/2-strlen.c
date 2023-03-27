@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * swap_int -  a function that swaps the values of two integers.
- * @a: an inout integer pointer
- * @b: an input integer pointer
- * Return: Nothing
+ * _strlen - returns the lenght of a string
+ * @s: character in use
+ * Return: Length of string
  */
-void swap_int(int *a, int *b)
+int _strlen(char *s)
 {
-	int var;
+	int len = 0;
 
-	var = *a;
-	*a = *b;
-	*b = var;
+	for (; *s != '\0'; s++)
+		len++;
+
+	return (len);
 }
